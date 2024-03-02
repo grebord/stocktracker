@@ -1,0 +1,61 @@
+/* ROOT */
+.root {
+    -fx-font-family: monospace;
+    -fx-font-size: 18;
+    -fx-base: #202020;
+    -fx-background: #202020;
+    -fx-light-text-color: #f0f0f0;
+}
+
+/* NODE */
+HBox {
+    -fx-spacing: 6;
+}
+
+Separator:horizontal .line {
+    -fx-border-color: gray transparent transparent transparent,
+            transparent transparent transparent transparent;
+}
+
+Separator:vertical .line {
+    -fx-border-color: transparent transparent transparent transparent,
+            transparent transparent transparent gray;
+}
+
+/* CLASS */
+VBox.dashboard {
+    -fx-spacing: 12;
+}
+
+HBox.bond-bar {
+    -fx-padding: 12 12 0 12;
+}
+
+ScrollPane.stock-pane {
+    -fx-fit-to-width: true;
+    -fx-fit-to-height: true;
+    -fx-padding: 0 12 12 12;
+    -fx-background-color: transparent;
+}
+
+ScrollPane.stock-pane TilePane {
+    -fx-hgap: 6;
+    -fx-vgap: 6;
+    -fx-background-color: transparent;
+}
+
+VBox.stock-tile {
+    -fx-spacing: 6;
+    -fx-border-color: gray;
+    -fx-border-radius: 2;
+    -fx-padding: 6 12 6 12;
+}
+
+VBox.stock-tile .stock-name {
+    -fx-light-text-color: rgb(250, 66, 103);
+}
+
+/* PSEUDO CLASS */
+:comparator-text {
+    -fx-light-text-color: gray;
+}

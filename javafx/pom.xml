@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.stocktracker</groupId>
+    <artifactId>app</artifactId>
+    <version>0.1</version>
+  </parent>
+
+  <artifactId>javafx</artifactId>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>17</maven.compiler.release>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.stocktracker</groupId>
+      <artifactId>base</artifactId>
+      <version>0.1</version>
+    </dependency>
+    <!-- gui -->
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>17.0.10</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.12.1</version>
+          <configuration>
+            <release>${maven.compiler.release}</release>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-maven-plugin</artifactId>
+          <version>0.0.8</version>
+          <configuration>
+            <jlinkImageName>stocktrackerimage</jlinkImageName>
+            <launcher>stocktrackerlauncher</launcher>
+            <mainClass>javafx/com.stocktracker.javafx.AppFx</mainClass>
+            <commandlineArgs>--useApi=true CRM:18 AAPL:20 NVDA:24 MSFT:30 AMD:10 AMZN:144 GOOGL:58 GLOB:18 QQQ:20</commandlineArgs>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

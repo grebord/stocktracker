@@ -1,0 +1,42 @@
+{
+    "content": {
+        "page_number": 1,
+        "page_count": 1,
+        "page_size": 1,
+        "total_elements_count": 1
+    },
+    "data": [
+        {
+            "tradeVolume": 1166,
+            "symbol": "QQQ",
+            "imbalance": 0.0236,
+            "previousSettlementPrice": 27251.5,
+            "offerPrice": 27895.5,
+            "openInterest": 0,
+            "vwap": 27784.13636359999873093329370021820068359375,
+            "numberOfOrders": 235,
+            "openingPrice": 27500,
+            "tickDirection": -1,
+            "securityDesc": "",
+            "securitySubType": "",
+            "previousClosingPrice": 27251.5,
+            "settlementType": "3",
+            "quantityOffer": 3972,
+            "tradingHighPrice": 28201,
+            "denominationCcy": "ARS",
+            "bidPrice": 27610.5,
+            "tradingLowPrice": 27500,
+            "market": "BYMA",
+            "volumeAmount": 32396303,
+            "volume": 1166,
+            "trade": 27895.5,
+            "tradeHour": "11:13:48",
+            "securityType": "CD",
+            "closingPrice": 0,
+            "settlementPrice": 27895.5,
+            "quantityBid": 4000
+        }
+    ],
+    "empty": false,
+    "upgrade": false
+}
